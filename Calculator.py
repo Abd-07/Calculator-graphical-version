@@ -68,35 +68,36 @@ def eraser_a():
     text_3.delete(0,"end")
     
 ##creation of buttons
-button_sum=tkinter.Button(window,text="+",command=summ,height=3,width=7,fg='green')
-button_sum.place(x=130,y=135)
-button_minus=tkinter.Button(window,text="-",command=minus,height=3,width=7,fg='green')
+button_sum=tkinter.Button(window,text="+",command=summ,height=3,width=5,fg='green')
+button_sum.place(x=115,y=135)
+button_minus=tkinter.Button(window,text="-",command=minus,height=3,width=5,fg='green')
 button_minus.place(x=195,y=135)
-button_mult=tkinter.Button(window,text="x",command=mult,height=3,width=7,fg='green')
-button_mult.place(x=130,y=185)
-button_div=tkinter.Button(window,text="÷",command=div,height=3,width=7,fg='green')
-button_div.place(x=195,y=185)
+button_mult=tkinter.Button(window,text="x",command=mult,height=3,width=5,fg='green')
+button_mult.place(x=115,y=195)
+button_div=tkinter.Button(window,text="÷",command=div,height=3,width=5,fg='green')
+button_div.place(x=195,y=195)
+
 button_erase=tkinter.Button(window,text="Erase result",command=eraser,fg='red')
-button_erase.place(x=11,y=37)
+button_erase.place(x=3,y=35)
 button_erase_all=tkinter.Button(window,text="Erase all",command=eraser_a,fg='red')
-button_erase_all.place(x=18,y=97)
+button_erase_all.place(x=3,y=85)
 
 ##Creation of text
-text_1=tkinter.Entry(window,width=20)
-text_1.place(x=95,y=35)
-text_2=tkinter.Entry(window,width=20)
-text_2.place(x=95,y=95)
-text_3=tkinter.Entry(window,width=20)
-text_3.place(x=95,y=267)
+text_1=tkinter.Entry(window,width=15)
+text_1.place(x=120,y=35)
+text_2=tkinter.Entry(window,width=15)
+text_2.place(x=120,y=95)
+text_3=tkinter.Entry(window,width=15)
+text_3.place(x=15,y=267)
 
 
 ##Creation of labels
 label_1=tkinter.Label(window,text="Enter the first number:",bg='#000080',fg='white')
-label_1.place(x=95,y=5)
+label_1.place(x=120,y=5)
 label_2=tkinter.Label(window,text="Enter the second number:",bg='#000080',fg='white')
-label_2.place(x=95,y=65)
+label_2.place(x=115,y=65)
 label_3=tkinter.Label(window,text="Result:",bg='#000080',fg='white')
-label_3.place(x=95,y=237)
+label_3.place(x=15,y=237)
 
 
 
